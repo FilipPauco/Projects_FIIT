@@ -1,0 +1,123 @@
+@startuml
+
+AuctionBuyerLegal --> Auction_user
+Legal --> AuctionBuyerLegal
+Private --> AuctionBuyerLegal
+Auction_admin --> Auction_user
+Seller --> Auction_user
+Output --> Legal
+Output --> Private
+ItemBoots --> Item
+ItemSport --> Item
+ItemSportIndoor --> ItemSport
+ItemSportOutdoor --> ItemSport
+
+
+class Auction_user{
+    - Open for everyone
+    - Look into auctions
+    - Connected to database
+    - Getters and setters for name and account restriction
+    + showBid()
+    + display()
+    + initialize()
+    + executeQuery(String query)
+    + showItem()
+    + getItemList()
+    + getConnection()
+    + access()
+}
+
+
+class AuctionBuyerLegal{
+    - Ability to bid
+    - Choice of private or legal
+    +setValue()
+    + showDialog()
+    + access()
+}
+
+class Legal{
+    - Legal person has to verify with password
+    - Discount 5 %
+    - Getters and setters for IČO number
+
+    + message()
+    + access()
+
+}
+
+class Private{
+    - No need to verify
+    - Has to pay 100 % of his bid
+    - Getters and setters for adress and number
+    +access()
+    + message()
+
+}
+
+class Seller{
+    - Ability to bid
+    - Ability to create acutions
+    - Getters and setters for adress and number
+    + insertData()
+    + insertRecord()
+    + access()
+
+}
+
+class Auction_admin{
+    - Ability to remove auctions
+    - Getters and setters for ID
+    + delete()
+    + access()
+
+}
+
+interface Output{
+    -Informs about the amount to pay
+    +message()
+}
+
+class Item{
+    - Stores information about shoes
+    - Brand, name, size, quantity, price
+    - Getter and setter methods
+}
+
+class Item{
+    - Stores information about shoes
+    - Brand, name, size, quantity, price
+    - Getter and setter methods
+}
+class ItemSport{
+    - Type information
+    - Getter and setter methods
+    + getMessage()
+}
+class ItemBoots{
+    - Type information
+    - Getter and setter methods
+    + getMessage()
+}
+
+class ItemSportIndoor{
+    - Worse durability
+    - Getter and setter methods
+    + getMessage()
+}
+
+class ItemSportOutdoor{
+    - Better durability
+    - Getter and setter methods
+    + getMessage()
+}
+
+Object Auction{
+    - Stores data in database
+    - Uses specification of items from Item class
+    - Insert, delete, display and edit items
+}
+
+
+@enduml

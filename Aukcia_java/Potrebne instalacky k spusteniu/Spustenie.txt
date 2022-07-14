@@ -1,0 +1,3 @@
+Potrebne pre spustenie nainstalovat - https://dev.mysql.com/downloads/mysql/
+				    - https://www.wampserver.com/
+                                    - JavaFX.

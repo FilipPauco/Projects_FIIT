@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.eshoey.AdminInfo">
+   <children>
+      <TextField fx:id="meno" layoutX="258.0" layoutY="90.0" prefHeight="25.0" prefWidth="85.0" promptText="Meno" style="-fx-background-color: #fff200;" />
+      <TextField fx:id="mesto" layoutX="258.0" layoutY="129.0" prefHeight="25.0" prefWidth="85.0" promptText="ID" style="-fx-background-color: #fff200;" />
+      <Label layoutX="201.0" layoutY="27.0" text="Information-Admin" textFill="#fff200">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="532.0" layoutY="29.0" mnemonicParsing="false" onAction="#goBack" prefHeight="27.0" prefWidth="54.0" style="-fx-background-color: #fff200;" text="Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="submit" layoutX="362.0" layoutY="193.0" mnemonicParsing="false" onAction="#Submit" prefHeight="27.0" prefWidth="64.0" style="-fx-background-color: #fff200;" text="Submit">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="181.0" layoutY="92.0" text="Meno" textFill="#fff200">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="131.0" text="ID" textFill="#fff200">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

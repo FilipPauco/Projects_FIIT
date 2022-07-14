@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.eshoey.Login">
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <RadioButton fx:id="cb4" layoutX="-23.0" layoutY="353.0" mnemonicParsing="false" onAction="#checkEvent" text="Admin" textFill="#fff200">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="g1" />
+               </toggleGroup>
+            </RadioButton>
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="309.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="117.0" fitWidth="231.0" layoutX="233.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+            </ImageView>
+            <Label layoutX="181.0" layoutY="187.0" text="Username" textFill="#fff200">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="183.0" layoutY="231.0" text="Password" textFill="#fff200">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="271.0" layoutY="187.0" promptText="Username" />
+            <PasswordField fx:id="password" layoutX="271.0" layoutY="232.0" promptText="Password" />
+            <Button fx:id="button" layoutX="308.0" layoutY="289.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="28.0" prefWidth="58.0" style="-fx-background-color: #fff200;" text="Log in">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="wrongLogin" layoutX="147.0" layoutY="153.0" textFill="RED" />
+            <Label layoutX="48.0" layoutY="51.0" text="Login" textFill="#fff200">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="cb1" layoutX="148.0" layoutY="353.0" mnemonicParsing="false" onAction="#checkEvent" text="Seller" textFill="#fff200" toggleGroup="$g1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="cb2" layoutX="252.0" layoutY="353.0" mnemonicParsing="false" onAction="#checkEvent" text="Buyer" textFill="#fff200" toggleGroup="$g1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="cb3" layoutX="355.0" layoutY="353.0" mnemonicParsing="false" onAction="#checkEvent" text="User" textFill="#fff200" toggleGroup="$g1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <ImageView fitHeight="70.0" fitWidth="155.0" layoutX="252.0" layoutY="38.0">
+               <image>
+                  <Image url="@1200x600bf.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="register" layoutX="185.0" layoutY="289.0" mnemonicParsing="false" onAction="#register" prefHeight="28.0" prefWidth="71.0" style="-fx-background-color: #fff200;" text="Register">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

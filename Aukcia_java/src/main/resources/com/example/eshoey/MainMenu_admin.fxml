@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.eshoey.Menus.Menu_admin">
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="124.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="110.0" layoutY="15.0" text="E-Shoey" textFill="#fff200">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="59.0" fitWidth="66.0" layoutX="28.0" layoutY="-2.0">
+                     <image>
+                        <Image url="@stock-vector-auction-yellow-glowing-neon-icon.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="logout" layoutX="524.0" layoutY="14.0" mnemonicParsing="false" onAction="#userLogOut" style="-fx-background-color: #fff200;" text="Log-out">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="about" layoutX="396.0" layoutY="14.0" mnemonicParsing="false" onAction="#goAbout" style="-fx-background-color: #fff200;" text="About us">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="auctions" layoutX="319.0" layoutY="14.0" mnemonicParsing="false" onAction="#goAuction" style="-fx-background-color: #fff200;" text="Auctions">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="411.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane layoutY="22.0" prefHeight="200.0" prefWidth="207.0">
+                     <children>
+                        <Label layoutX="51.0" layoutY="66.0" text="Auction 3" textFill="#fff200">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="185.0" layoutY="121.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane layoutX="35.0" layoutY="128.0" prefHeight="104.0" prefWidth="202.0" />
+                  <Label layoutX="89.0" layoutY="68.0" text="Auction 2" textFill="#fff200">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="204.0" prefHeight="110.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="74.0" layoutY="-15.0" text="Auction 1" textFill="#fff200">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="191.0" fitWidth="305.0" layoutX="147.0" layoutY="6.0" nodeOrientation="RIGHT_TO_LEFT">
+                     <image>
+                        <Image url="@nike-air-max-black-krasota.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="160.0" fitWidth="256.0" layoutX="-18.0" layoutY="23.0" nodeOrientation="RIGHT_TO_LEFT">
+                     <image>
+                        <Image url="@624eedc9c22f8.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="86.0" fitWidth="155.0" layoutX="415.0" layoutY="60.0" nodeOrientation="RIGHT_TO_LEFT">
+                     <image>
+                        <Image url="@adidas-4D-Run.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="7.0" layoutY="4.0" prefHeight="54.0" prefWidth="326.0" />
+            <Label layoutX="208.0" layoutY="78.0" text="Welcome to E-shoey" textFill="#fff200">
+               <font>
+                  <Font name="Harlow Solid Italic" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="info" layoutX="475.0" layoutY="14.0" mnemonicParsing="false" onAction="#goInfo" style="-fx-background-color: #fff200;" text="Info">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
